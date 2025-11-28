@@ -3,16 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainydays</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Product</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="/js/"></script>
   </head>
-</html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rainydays</title>
-</head>
-<body>
-  
-</body>
+  <section class="banner">
+    <img src="./images/RainyDays_main_logo.png" />
+  </section>
+  <body>
+     <header class="header">
+    <nav class="navbar--grid">
+    <div class="search-container">
+  <input type="text" id="search" class="search__input" placeholder="Search ..." onkeydown="if(event.key === 'Enter'){ search(); }">
+</div>
+    <div class="nav--login">
+      LOG IN / SIGN UP
+    </div>
+    <div></div>
+    <div class="cart-container">
+      <span class="cart--text">CART</span>
+      <span id="cart-count" class="cart-count">[0]</span>
+    </div>
+    </nav>
+  </header>
+    <main>
+    <section class="all--grid">
+    <div class="div1">
+      <div class="filter">
+        <input type="radio" id="all-filter" name="filter-gender" value="all">
+        <label for="all-filter">All</label>
+       <input type="radio" id="men-filter" name="filter-gender" value="men">
+        <label for="men-filter">Men</label>
+           <input type="radio" id="women-filter" name="filter-gender" value="women">
+        <label for="women-filter">Women</label>
+      </div>
+    </div>
+   <div class="div2">
+    <div class="products--grid">
+      <div></div>
+  <div></div>
+  <div></div>  
+  <div></div>
+  <div></div>
+  <div></div>
+    </div>
+   </div>
+    <div class="div3"></div>
+    </main>
+    </section>
+    <footer class="footer">
+      <div class="website__rights">
+        <p>Terms & conditions</p>
+        <p class="website__rights--text">&copy; 2025 Rainydays</p>
+      </div>
+    </footer>
+  </body>
 </html>
